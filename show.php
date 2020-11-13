@@ -5,7 +5,7 @@
 <body>
 <?php
 $conn = mysqli_init();
-mysqli_real_connect($conn, 'labkrub.mysql.database.azure.com', 'kanakarn@labkrub', 'Jaoo01062544', 'itflab', 3306);
+mysqli_real_connect($conn, 'nonthapaht228.mysql.database.azure.com', 'nonthapaht@nonthapaht228', 'Non0642306141', 'itflab', 3306);
 if (mysqli_connect_errno($conn))
 {
     die('Failed to connect to MySQL: '.mysqli_connect_error());
@@ -23,7 +23,7 @@ while($Result = mysqli_fetch_array($res))
 {
 ?>
   <tr>
-    <td><?php echo $Result['name'];?></div></td>
+    <td><?php echo $Result['Name'];?></div></td>
     <td><?php echo $Result['Comment'];?></td>
     <td><?php echo $Result['Link'];?></td>
   </tr>

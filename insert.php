@@ -1,6 +1,6 @@
 <?php
     $conn = mysqli_init();
-    mysqli_real_connect($conn, 'servertest002.mysql.database.azure.com', 'Trda@servertest002', 'Tadaohm1234', 'pythondbs', 3306);
+    mysqli_real_connect($conn, 'nonthapaht228.mysql.database.azure.com', 'nonthapaht@nonthapaht228', 'Non0642306141', 'itflab', 3306);
     if(mysqli_connect_errno($conn)) {
         die('Failed to connect to MySQL: '.mysqli_connect_error());
     }

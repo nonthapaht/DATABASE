@@ -1,18 +1,11 @@
 <?php
-    $conn = mysqli_init();
-    mysqli_real_connect($conn, 'servertest002.mysql.database.azure.com', 'Trda@servertest002', 'Tadaohm1234', 'pythondbs', 3306);
-    if(mysqli_connect_errno($conn)) {
-        die('Failed to connect to MySQL: '.mysqli_connect_error());
-    }
-    $name = $_POST['name'];
-    $comment = $_POST['comment'];
-    $link = $_POST['link'];
-    $sql = "INSERT INTO user (name, comment, link) VALUES ('$name', '$comment', '$link')";
+    $conn = mysqli_connect('nonthapaht228.mysql.database.azure.com', 'nonthapaht@nonthapaht228', 'Non0642306141', 'itflab');
+    $sql = 'DELETE FROM user WHERE ID = '.$_GET['ID'].'';
 ?>
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Adddata</title>
+    <title>Delete</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css">
     <style type="text/css">
@@ -30,10 +23,10 @@
                         <h2 align="center">
                         <?php
                             if(mysqli_query($conn, $sql)) {
-                                echo "ADD COMPLETED";
+                                echo "DELETE COMPLETED";
                             }
                             else {
-                                echo "FAILED TO ADD";
+                                echo "FAILED TO DELETE";
                             }
                         ?>
                         </h2>

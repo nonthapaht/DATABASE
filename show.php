@@ -22,7 +22,6 @@ $res = mysqli_query($conn, 'SELECT * FROM user');
 ?>
 <center><header style="font-size:300%;">Data Base Project</header></center>
 <div class="container">
-<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names.." title="Type in a name">
 <table class="table" id="myTable">
   <thead class="thead-dark">
   <tr>
